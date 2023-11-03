@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="A Web Application to Introducing KATEDA Martial Art"/>
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Sarra Nutrisia" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>KATEDA Martial Art</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="icon" href="images/Logo Kateda Indonesia.jpg"
+      type="Icon Kateda Indonesia"/>
+    
+</head>
+<body>
+    <nav>
+        <span class="mobile">
+          <img
+            src="images/hamburger-icon_adobe_express.svg"
+            alt="Hamburger Icon"/>
+        </span>
+        <span class="relative-container">
+          <img
+            src="https://i.pinimg.com/564x/5e/78/1f/5e781fe15faf0426ac4d97143f884639.jpg"
+            alt="KATEDA Membership Club Icon" height="50px" width="50px"/>
+          <b>KATEDA Membership Club</b>
+          <span class="circle-red">New!</span>
+        </span>
+        <span id="dark-mode-switch">
+          <p>Dark Mode</p>
+  
+          <label class="switch">
+            <input
+              id="checkbox-dark-mode"
+              onchange="toggleDarkMode()"
+              type="checkbox"
+            />
+            <span class="slider round"></span>
+          </label>
+        </span>
+        <ul class="desktop">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    <header class="full-screen" id="header">
+        <h1>KATEDA Martial Art</h1>
+        <p>Come join us and feel the experience</p>
+    </header>
+    <main>
+        <section id="our-activities">
+            <h2>Our Activities</h2>
+
+            <div class="grid-container">
+                <div class="kateda-potrait-item" id="potrait-1">
+            <img 
+                src="./images/Punch.jpg"
+                alt="The student of KATEDA who punch his teacher's chest."/>
+                </div>
+
+                <div class="kateda-potrait-item" id="potrait-2">
+            <img
+                src="./images/Together.webp"
+                alt="Teachers and students from KATEDA Martial Art Branch Jakarta taking picture together."/>
+                </div>
+
+                <div class="kateda-potrait-item" id="potrait-3">
+            <img
+                src="./images/kateda-kacindo-1.jpg" 
+                alt="KATEDA martial art training for children in elementary school"/>
+                </div>
+
+                <div class="kateda-potrait-item" id="potrait-4">
+            <img
+                src="./images/Teacher Practice.webp"
+                alt="Six teachers of KATEDA practicing together."/>
+                </div>
+
+                <div class="kateda-potrait-item" id="potrait-5">
+                <img
+                src="./images/Brick Test.webp"
+                alt="A student of KATEDA School who withstand brick attack on his stomach from his teacher."/>
+                </div>  
+            </div>
+        </section>
+
+        <section id="KATEDA-facts">
+            <h2>Facts about Kateda</h2>
+        <div class="flex-container">
+            <ul>
+                <li class="develop">
+                    This martial art actually began to be developed from Indonesia since 1963 on Mount Bromo by Grand Master Takashi</li>
+                <li class="symbol">
+                    The KATEDA symbol is taken from the mountain symbol</li>
+                <li class="school">
+                    On 5 March 1981, "London KATEDA School of Defense" became the center of all KATEDA schools</li>
+            </ul>
+            <figure>
+              <picture>
+                <source
+                media="(max-width: 480px)"
+                srcset="./images/Master Takashi-mobile.png"
+              />
+                <img src="./images/Master-Takashi.webp" 
+                alt="Potrait of Grand Master Takashi"/>
+              </picture>
+                <figcaption>This is Our <em>Grand Master Takashi</em></figcaption>
+            </figure>
+            </div>
+        </section> 
+
+        <section id="KATEDA-technic">
+            <h2>Technical Movements</h2>
+            <div class="flex-container">
+            <ul>
+                <li class="punch">
+                    Punch</li>
+                <li class="kick">
+                    Kick</li>
+                <li class="slam">
+                    Slam</li>
+                <li class="withstand">
+                    Withstand blunt force attacks from any direction</li>
+            </ul>
+            </div>
+             <figure>
+              <picture>
+              <source
+                media="(max-width: 480px)"
+                srcset="./images/man-withstand-blunt-attack-mobile.png"
+              />
+                <img src="./images/man withstand blunt attack.webp" alt="A student of KATEDA School who withstand iron stick attack on his stomach from his teacher"/>
+              </picture>
+                <figcaption>Student who <em>Practice to Withstand the Blunt Attack</em></figcaption>
+            </figure>
+            </div>
+        </section>
+
+        <section id="section-video">
+            <h2>Untold Story of KATEDA Indonesia!</h2>
+            <div class="flex-container">
+            <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/srhBUnGrc5k" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+            </iframe>
+            </div>
+        </section>
+
+        <section id="form-section">
+            <h2>Join our KATEDA Membership Club!</h2>
+            <form action="#">
+              <fieldset>
+                <legend>Fill in your Bio here!</legend>
+                <div>
+                  <label for="fullName">Full Name:</label>
+                  <input id="fullName" type="text" placeholder="Input your name here" required autocomplete="given-name">
+                </div>
+    
+                <div>
+                  <label for="email">Email:</label>
+                  <input id="email" type="email" placeholder="For example : kateda.indonesia@gmail.com" required />
+                </div>
+
+                <div>
+                  <label for="dob">Date of Birth</label>
+                  <input
+                    type="date"
+                    id="dob"
+                    name="trip-start"
+                    value="2023-06-30"/>
+                </div>
+    
+                <div>
+                  <p>Have you ever practice any martial art before?</p>
+                  <input type="radio" id="yes" name="isPractice" value="Male" />
+                  <label for="yes">Yes</label>
+                  <input type="radio" id="no" name="isPractice" value="Female" />
+                  <label for="no">No</label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Additional information:</legend>
+                <div>
+                  <p>What's martial art do you ever practice?</p>
+                  <input
+                    id="karate"
+                    type="checkbox"
+                    name="kind"
+                    value="karate"/>
+                  <label for="karate">Karate</label>
+
+                  <input
+                    id="taekwondo"
+                    type="checkbox"
+                    name="kind"
+                    value="taekwondo"/>
+                  <label for="taekwondo">Taekwondo</label>
+
+                  <input
+                    id="other"
+                    type="checkbox"
+                    name="kind"
+                    value="other"/>
+                  <label for="other">Other</label>
+
+                  <input
+                    id="never"
+                    type="checkbox"
+                    name="kind"
+                    value="never"/>
+                  <label for="never">Never</label>
+
+                </div>
+                <div>
+                  <p>Tell us why do you want to join our club?</p>
+                  <textarea rows="3" placeholder="Please describe your reason here"></textarea>
+                </div>
+                <div>
+                  <p>Upload your photo here:</p>
+                  <input
+                    type="file"
+                    id="photo"
+                    name="myPhoto"
+                    required
+                    accept="image/png, image/jpeg"/>
+                </div>
+              </fieldset>
+              <button type="submit">Submit</button>
+            </form>
+          </section>
+        </main>
+
+        <div class="footer">
+            <h6>Copyright &copy; 2023</h6>
+        </div> 
+        <script src="index.js"></script>
+    </body>
+</html>
