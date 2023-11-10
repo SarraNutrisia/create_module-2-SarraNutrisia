@@ -74,7 +74,7 @@ There are few steps in Deployment Flow, Buy A Domain, Setting Up DNS and Connect
 
 ## Deployment Flow ![Deployment Flow](images/Deployment_Flow.png)
 Before sign up to netlify, make sure you have a github account and had push your project to your Github Account. After that, follow this step :
-1. Go to [Netlify Website](https://www.netlify.com). 
+1. Go to [Netlify Website](https://www.netlify.com) ![Deployment_Netlify](images/Icon_Deployment.png)
    
 2. Sign Up & Log In to Netlify > Login with GitHub.
    
@@ -103,8 +103,8 @@ Before sign up to netlify, make sure you have a github account and had push your
 
 
 ## Buy A Domain ![Buy_Domain](images/Buy_Domain.png)
-Please do a research which domain site do you prefer to purchase based on the price and needs.
-1. Go to [Niagahoster Website](https://www.niagahoster.co.id/) (I choose this because it's cheap and convincing)
+Please do a research which domain site do you prefer to purchase based on the price and needs. (I choose domain from Niagahoster because it's cheap and convincing)
+1. Go to [Niagahoster Website](https://www.niagahoster.co.id/) ![Domain_Niagahoster](images/Icon_Domain.png)          
    
 2. Login > Register > Choose "Search New Domain / Cari Domain Baru".
    
