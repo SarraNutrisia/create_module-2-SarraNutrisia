@@ -67,60 +67,109 @@ There is one JavaScript file in this theme:
 This theme use the alert function and dark mode function of JavaScript.
 
 ***
-# Deployment Process & Custom Domain
-There are few steps in Deployment Flow, Buy A Domain, Setting Up Cloudflare, Setting Up DNS and Connect Domain to Netlify.
-***
-## Deployment Flow
-Before sign up to netlify, make sure you have a github account and had push your project to your Github Account. After that, follow this step :
-1. Go to https://www.netlify.com
-2. Sign Up to Netlify > Sign Up with GitHub
-3. After the configuration with GithHub, then choose Add New Site > Import an Existing Project
-![Add new site](images/readme/AddNewSite_Netlify.png)
-4. Connect to git provider > Pick a repository > Choose Site Configuration and Deploy the Site
-![Add new site](images/readme/SiteConfigDeploy.png)
-5. After deploy the site, it will be automatically refreshed when you push "project" to your GitHub.
+# Deployment Process & Custom Domain ![Deployment Domain](images/Deployment_Domain.png)
+There are few steps in Deployment Flow, Buy A Domain, Setting Up DNS and Connect Domain to Netlify.
 
-## Buy A Domain
+***
+
+## Deployment Flow ![Deployment Flow](images/Deployment_Flow.png)
+Before sign up to netlify, make sure you have a github account and had push your project to your Github Account. After that, follow this step :
+1. Go to [Netlify Website](https://www.netlify.com). 
+   
+2. Sign Up & Log In to Netlify > Login with GitHub.
+   
+   ![Sign Up & Log In](images/Deploy_Netlify_1.png)
+
+   ![Log In With Github](images/Deploy_Netlify_2.png)
+
+3. After the configuration with GithHub, then choose Add New Site > Import an Existing Project.
+   
+   ![Import Project](images/Deploy_Netlify_3.png)
+
+4. Connect to git provider > Pick a repository > Choose Site Configuration and Deploy the Site.
+   
+   ![Choose Github Account](images/Deploy_Netlify_5.png)
+
+   ![Choose Repository ](images/Deploy_Netlify_6.png)
+
+   ![Choose Project](images/Deploy_Netlify_7.png)
+
+   ![Deploy Project](images/Deploy_Netlify_8.png)
+
+5. After deploy the site, then the deploy link will appear and it will be automatically refreshed every time you push "project" to your GitHub.
+   
+   ![Link Deploy](images/Deploy_Netlify_9.png)
+
+
+
+## Buy A Domain ![Buy_Domain](images/Buy_Domain.png)
 Please do a research which domain site do you prefer to purchase based on the price and needs.
-1. Go to https://www.niagahoster.co.id/ (I choose this because it's cheap and convincing)
-2. Login > Register > Choose Service "Domain".
-3. Type your domain name you want > and then click "Cari Sekarang", click "Bayar".
-![Add new site](images/readme/Choose_Name_Domain.png)
+1. Go to [Niagahoster Website](https://www.niagahoster.co.id/) (I choose this because it's cheap and convincing)
+   
+2. Login > Register > Choose "Search New Domain / Cari Domain Baru".
+   
+   ![Register & Input Domain](images/Beli_Domain_1_New.png)
+
+3. Type your domain name you want > and then click "Search Now / Cari Sekarang" > click "Choose / Pilih".
+   
+   ![Check Domain](images/Beli_Domain_2_New.png)
+
 4. Follow the instruction for following payment option.
+   
+   ![Paying Billing](images/Beli_Domain_4_New.png)
+
 5. The Domain Site has been purchased and you can use it.
    
-## Setting Up Cloudflare
-Cloudflare is a content delivery network (CDN) and cloud security platform that provides website optimization, security, and performance services. It acts as a mediator between a website's server and its visitors, improving the speed and reliability of the website while also protecting it from online threats.
+   ![Link Domain](images/Beli_Domain_5_New%20-%20Copy.png)
+    
 
-1. Go to https://dash.cloudflare.com/login > click Sign up.
-2. Follow the instruction and confirm your email > Login with your account.
-3. Click "Add a website or application" button on the bottom of the web page.
-4. Input your site name > click "Add Site".
-5. Scroll down and choose "Free" > click "Continue" > click "Confirm".
-6. To change the Nameservers of your Domain, first click to copy both of Nameserver (1 & 2) to overwrite your domain Nameserver.
-![Add new site](images/readme/Change_Nameservers.png)  
-7. Go to your domain provider, click "Layanan Anda" > click "Kelola Layanan" > click "Ubah Nameserver".
-8. Update your nameservers > Paste the nameserver from Cloudflare > click "Simpan".
-![Add new site](images/readme/Update_Nameservers_Niagahoster.png) 
-
-## Setting Up DNS
+## Setting Up DNS and Connect Domain to Netlify ![Setting_DNS](images/Setting_DNS.png)
 The Domain Name System (DNS) turns domain names into IP addresses, which browsers use to load internet pages. Every device connected to the internet has its own IP address, which is used by other devices to locate the device.
 
-1. Go to your Cloudflare account, click your website name > DNS > Records, click "Add Record".
-![DNS Management](images/readme/DNS_Management.png)
-2. Then enter "Type: CNAME, Name: www, Content: your Domain Address (i.e : sarranut.site)"
-3. Then enter "Type: A, Name: your Domain Address (i.e : sarranut.site), Content: your Netlify IPv4 Address (i.e 75.2.60.5)"
+1. Go to your Netlify account, choose your deploy site.
+   
+   ![Choose Site Deploy](images/Connect_Netlify_Niagahoster_1_New.png)
 
-## Connect Domain to Netlify
-Select the domain you want to link to your Netlify site and open the DNS records management portal.
-1. Login to your Netlify account > click your deployed website.
-2. Go to Site Overview > click Domain Settings.
-3. Click "Add A Custom Domain to Your Site" and then type your domain name (i.e : sarranut.site) > click "Verify" > click "Add Domain".
-![Connect Domain](images/readme/ConnectDomain.png)
-4. Then, your website is already to be used.
-![HTTPS Website](images/readme/https_website.png)
+2. Click Menu "Domain Management" to "Add a Domain" and verify your domain from Niagahoster to Netlify's deploy site. 
+   
+   ![Add Domain](images/Connect_Netlify_Niagahoster_2_New1.png)
+
+   ![Verify Domain](images/Connect_Netlify_Niagahoster_2_New2.png)
+   
+3. After verify domain, then click "Awaiting External DNS" and "Set Up Netlify DNS for your domain" plus "Verify" it, as follows.
+   
+   ![Awaiting External DNS](images/Connect_Netlify_Niagahoster_4_New.png) 
+
+   ![Set Up Netlify DNS](images/Connect_Netlify_Niagahoster_5_New.png)
+
+   ![Verify Domain to Netlify](images/Connect_Netlify_Niagahoster_6_New.png)
+
+4. Next step are Updating your domain's nameserver from Netlify to Niagahoster as follows on the screenshots below.
+
+   ![Add Domain to Netlify](images/Connect_Netlify_Niagahoster_7_New.png) 
+
+   ![Add DNS Records](images/Connect_Netlify_Niagahoster_8_New.png) 
+
+   ![List Nameservers From Netlify](images/Connect_Netlify_Niagahoster_9_New.png) 
+
+   ![Domain at Niagahoster](images/Connect_Netlify_Niagahoster_10_New.png) 
+
+   ![Change Domain Nameservers](images/Connect_Netlify_Niagahoster_11_New.png) 
+
+   ![Change Nameservers From Niagahoster to Netlify](images/Connect_Netlify_Niagahoster_12_New.png) 
+
+   ![Nameservers Changed](images/Connect_Netlify_Niagahoster_13_New.png) 
+
+5. Go back to your Netlify account and verify DNS configuration, then wait for external DNS propagation. Probably 1 to 2 hours or max. 24 hours until your domain's link will be ready to publish.  
+   
+   ![Verify DNS Configuration](images/Connect_Netlify_Niagahoster_15_New.png) 
+
+   ![Wait Fpr External DNS Propagation](images/Connect_Netlify_Niagahoster_16_New.png) 
+
+   ![Link Domain Ready](images/Connect_Netlify_Niagahoster_17_New.png) 
 
 
+You can check domain of this project by clicking this link : [Domain Niagahoster](https://sarranut.online/) ![Domain Icon](images/Domain_Icon.png)
 
 ***
 
