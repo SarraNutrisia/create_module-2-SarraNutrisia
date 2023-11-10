@@ -1,0 +1,507 @@
+@font-face {
+    font-family: Caveat;
+    src: url(fonts/Caveat-Regular.woff2);
+  }
+  
+  @font-face {
+    font-family: Caveat;
+    src: url(fonts/Caveat-Bold.woff2);
+    font-weight: bold;
+  }
+  
+  body {
+      font-family: Caveat, "Open Sans", Cambria;
+      margin: 0;
+      background-color: #F5EFE7;
+    }
+  
+  .dark-mode {
+      background-color: #333333;
+      color: #F5EFE7;
+  }
+    
+  .dark-mode > nav {
+      background-color: #333333;
+      color: #F5EFE7;
+      border-bottom: 2px solid #F5EFE7;
+  }
+    
+  .dark-mode > nav a {
+      color: #F5EFE7;
+    }
+  
+  .dark-mode li {
+      color: #F5EFE7;
+  }
+  
+  section {
+      margin: 0 16px;
+    }
+    
+  section.full-screen {
+      margin: 0;
+    }
+  
+  nav {
+      position: fixed;
+      background-color: #F5EFE7;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      height: 52px;
+      border-bottom: 2px solid #222222;
+      z-index: 99999;
+    }
+  
+  /* The switch - the box around the slider */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 22px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #686262;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #F5EFE7;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  nav a {
+    color: #222222;
+    text-decoration: none;
+  }
+  
+  nav > #dark-mode-switch {
+    display: flex;
+    margin-left: auto;
+    margin-right: 16px;
+  }
+  
+  nav > #dark-mode-switch > p {
+    margin-right: 8px;
+  }
+  
+  nav > ul {
+      margin-left: auto;
+      margin-right: 16px;
+    }
+  
+  nav > ul > li {
+      display: inline-block;
+    }
+  
+  nav > span > img {
+      height: 32px;
+      width: auto;
+      padding: 8px;
+    }
+  
+  nav > span {
+      display: flex;
+      align-items: center;
+    }
+  
+  header {
+      text-align: center;
+      color: #F5EFE7;
+      background-color: #2B2730;
+      height: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 48px;
+      background-image:url(images/sparing-partner.jpg);
+      background-position: top center;
+      background-size: cover;
+    }
+  
+  nav .circle-red {
+      font-size: 10px;
+      background-color: #B31312;
+      border-radius: 100%;
+      width: 23px;
+      height: 23px;
+      color: #F5EFE7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 2px;
+      right: -17px;
+    }
+  
+  .desktop{
+    cursor: pointer;
+  }
+  
+  .relative-container{
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .circle-red{
+    cursor: pointer;
+  }
+  
+  h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    50% {
+      margin-left: 25%;
+      width: 150%;
+      font-size: 2em;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+    
+  header h1 {
+      margin: 16px;
+      font-size: 300%;
+      font-weight: bold;
+      animation-duration: 3s;
+      animation-name: slidein;
+      text-shadow: 2px 2px gray;
+    }
+  
+  header p {
+      margin: 0;
+      font-size: 300%;
+      text-shadow: 2px 2px gray;
+    }
+  
+  #our-activities h2{
+    font-size: 200%;
+  }
+    
+  img {
+      width: 100%;
+    }
+  
+  figure {
+    border-radius: 5% 5% 5% 5%;
+    border-style: groove;
+    border-width: 10px;
+  }
+    
+  h2 {
+      font-weight: 300%;
+      text-align: center;
+      text-decoration: overline;
+      font-size: 40px;
+    }
+  
+  #section-video .flex-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+  #KATEDA-facts .flex-container figure {
+      text-align: center;
+    }
+    
+  #KATEDA-facts .flex-container img {
+      height: 240px;
+      width: auto;
+    }
+  
+  #KATEDA-technic .flex-container figure {
+      text-align: center;
+    }
+    
+  #KATEDA-technic .flex-container img {
+      height: 240px;
+      width: auto;
+    }
+  
+  #our-activities .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 8px;
+      grid-auto-rows: 240px 240px 240px;
+    }
+    
+  #our-activities .grid-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5% 5% 5% 5%;
+    }
+    
+  .grid-container #potrait-1 {
+      grid-column: 1 / 2 span;
+      grid-row: 1;
+    }
+  
+  fieldset {
+      margin: 16px 0;
+      border-radius: 4px;
+    }
+  
+  #KATEDA-facts h2{
+    font-size: xx-large;
+    margin-top: 100px;
+  }
+  
+  .develop{
+    padding: 10px;
+    font-size: 25px;
+    color: #333333;
+    font-weight: bold;
+  }
+  
+  .symbol{
+    padding: 10px;
+    font-size: 25px;
+    color: #333333;
+    font-weight: bold;
+  }
+  
+  .school{
+    padding: 10px;
+    font-size: 25px;
+    color: #333333;
+    font-weight: bold;
+  }
+  
+  #KATEDA-technic h2{
+    font-size: xx-large;
+    margin-top: 50px;
+  }
+  
+  .punch{
+    padding: 10px;
+    font-size: 25px;
+    color: #333333;
+    font-weight: bold;
+  }
+  
+  .kick{
+    padding: 10px;
+    font-size: 25px;
+    color: #333333;
+    font-weight: bold;
+  }
+  
+  .slam{
+    padding: 10px;
+    font-size: 25px;
+    color: #333333;
+    font-weight: bold;
+  }
+  
+  .withstand{
+    padding: 10px;
+    font-size: 25px;
+    color: #333333;
+    font-weight: bold;
+  }
+   
+  input[type="text"],
+  input[type="email"],
+  textarea {
+      width: 100%;
+      padding: 4px 4px;
+      margin: 8px 0;
+      display: block;
+    }
+  
+  input[type="date"] {
+    margin: 8px 0;
+    display: block;
+  }
+    
+  #form-section {
+      background-color: #034159;
+      color: #F5EFE7;
+      padding: 8px;
+      margin-top: 16px;
+    }
+    
+  #form-section form {
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+  button[type="submit"] {
+      color: #F5EFE7;
+      background-color: transparent;
+      border: 1px solid #F5EFE7;
+      border-radius: 4px;
+      width: 100%;
+      padding: 8px 16px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  
+  .kateda-potrait-item {
+    filter: grayscale(100%);
+    cursor: pointer;
+  }
+  
+  .kateda-potrait-item:hover {
+    filter: none;
+    transition-property: filter;
+    transition-duration: 1s;
+  }
+  
+  /* for tablet and desktop */
+  @media only screen and (min-width: 768px) {
+      #KATEDA-facts > .flex-container {
+        display: flex;
+        align-items: center;
+      }
+    
+      #KATEDA-facts > .flex-container figure {
+        margin-left: auto;
+      }
+    
+      #KATEDA-facts > .flex-container figure img {
+        height: 400px;
+      }
+    
+      #KATEDA-facts > .flex-container figcaption {
+        text-align: center;
+        margin-top: 16px;
+      }
+    
+      #KATEDA-facts > .flex-container.row-reverse {
+        flex-direction: row-reverse;
+      }
+    
+      #KATEDA-facts > .flex-container.row-reverse p {
+        margin-left: 32px;
+      }
+    
+      #KATEDA-facts > .flex-container.row-reverse figure {
+        margin-left: 40px;
+        min-width: 320px;
+      }
+  
+      #KATEDA-technic > .flex-container {
+          display: flex;
+          align-items: center;
+        }
+      
+        #KATEDA-technic > .flex-container figure {
+          margin-left: auto;
+        }
+      
+        #KATEDA-technic > .flex-container figure img {
+          height: 400px;
+        }
+      
+        #KATEDA-technic > .flex-container figcaption {
+          text-align: center;
+          margin-top: 16px;
+        }
+      
+        #KATEDA-technic > .flex-container.row-reverse {
+          flex-direction: row-reverse;
+        }
+      
+        #KATEDA-technic > .flex-container.row-reverse p {
+          margin-left: 32px;
+        }
+      
+        #KATEDA-technic > .flex-container.row-reverse figure {
+          margin-left: 40px;
+          min-width: 320px;
+        }
+    
+      iframe {
+        max-width: 480px;
+      }
+    
+      #our-activities .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 16px;
+        grid-auto-rows: 320px 320px;
+      }
+    
+      #our-activities .grid-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    
+      .grid-container #potrait-1 {
+        grid-column: 1;
+        grid-row: 1 / 2 span;
+      }
+    
+      .grid-container #potrait-2 {
+        grid-row: 1;
+        grid-column: 2 / 3 span;
+      }
+    }
+  
+      .footer{
+          text-align: center;
+          font-size: larger;
+      }
