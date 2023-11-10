@@ -44,7 +44,7 @@ The HTML Structure for each page is as follows:
 * Footer
 	* Copyright
   
-You can check the Deployment of this website by clicking this link : [Link Netlify](https://euphonious-bavarois-44923c.netlify.app) ![Deploy Icon](images/Deploy_Icon.png)
+You can check the Deployment of this website by clicking this link : [Link Netlify](https://statuesque-lamington-6ee922.netlify.app) ![Deploy Icon](images/Deploy_Icon.png)
   
 ***
 ## 2. CSS File ![CSS Icon](images/CSS_Icon.png)
